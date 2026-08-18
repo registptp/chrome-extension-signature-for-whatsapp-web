@@ -8,7 +8,7 @@ Uma extensão simples para o Chrome que adiciona automaticamente uma assinatura 
 
 Uma solução para multiatendimento via WhatsApp Web, identificando o atendente com seu nome antes da mensagem.
 
-A ideia aqui é automatizar aquele "copia e cola" chato, mas sem poluir a interface do zap.
+A ideia aqui é automatizar aquele "copia e cola" chato, mas sem poluir a interface do whatsapp.
 
 ---
 
