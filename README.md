@@ -62,3 +62,23 @@ Como é um projeto pessoal e não está na Web Store, você pode instalar direto
 ---
 
 **Criado por Regis da Cruz Roberto**
+
+---
+
+---
+
+## ☕ Apoie o Projeto
+
+Se essa extensão facilitou o seu dia a dia no trabalho ou economizou o seu tempo, considere pagar um café para o desenvolvedor! Qualquer valor é bem-vindo e ajuda a manter o projeto atualizado 😊.
+
+<details>
+  <summary><b>💙 Clique aqui para doar via Pix (QR Code)</b></summary>
+  
+  <img src="qr_code.png" alt="QR Code Pix" width="200"/>
+</details>
+
+<br>
+
+**💙 PayPal:** [Clique aqui para doar via PayPal](https://www.paypal.com/donate/?hosted_button_id=5XUE5THKU8JQU)
+
+---
