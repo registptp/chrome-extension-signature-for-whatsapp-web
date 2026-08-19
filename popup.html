@@ -15,6 +15,22 @@
         <span class="slider"></span>
     </label>
 
+    <!-- Rodapé com Links e QR Code Pix -->
+    <div class="footer">
+        <p>Criado por <strong>Regis</strong></p>
+        <div class="actions">
+            <a href="https://www.linkedin.com/in/regis-da-cruz-roberto-785216298/" target="_blank" class="btn">LinkedIn</a>
+            <a href="https://www.paypal.com/donate/?hosted_button_id=5XUE5THKU8JQU" target="_blank" class="btn">PayPal</a>
+            <button id="pixBtn" class="btn">Pix</button>
+        </div>
+        
+        <!-- O QR Code expande logo abaixo ao clicar no botão -->
+        <div id="pixContainer" style="display:none; margin-top:10px;">
+            <img src="qr_code.png" alt="QR Code Pix" style="width:200px; height:200px; border-radius: 4px; border: 1px solid #99c2a3;">
+            <p style="font-size:9px; margin-top:2px; color: #1a4d2e; font-weight: bold;">Aponte a câmera e doe! ☕</p>
+        </div>
+    </div>
+
     <script src="popup.js"></script>
 </body>
 </html>

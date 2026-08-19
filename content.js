@@ -27,11 +27,19 @@ window.addEventListener('keydown', function(e) {
             let currentText = textarea.innerText.trim();
             
             if (currentText !== "") {
+                // VERIFICAÇÃO DE EMOJIS CORRIGIDA: Checa letras e números
+                const temTextoNormal = /[a-zA-Z0-9À-ÿ]/u.test(currentText);
+                const apenasEmojis = /^[\p{Emoji}\s]+$/u.test(currentText) && !temTextoNormal;
+                
+                if (apenasEmojis) { 
+                    return; // Se for SÓ emoji puro, ignora a assinatura
+                }
+
                 e.preventDefault();
                 e.stopPropagation();
                 e.stopImmediatePropagation(); // Impede que o WhatsApp veja este Enter
                 
-                enviarComAssinatura(textarea, currentText);
+                enviarComAssinatura(textarea);
             }
         }
     }
@@ -47,11 +55,19 @@ window.addEventListener('click', function(e) {
             let currentText = textarea.innerText.trim();
             
             if (currentText !== "") {
+                // VERIFICAÇÃO DE EMOJIS CORRIGIDA: Checa letras e números
+                const temTextoNormal = /[a-zA-Z0-9À-ÿ]/u.test(currentText);
+                const apenasEmojis = /^[\p{Emoji}\s]+$/u.test(currentText) && !temTextoNormal;
+                
+                if (apenasEmojis) { 
+                    return; // Se for SÓ emoji puro, ignora a assinatura
+                }
+
                 e.preventDefault();
                 e.stopPropagation();
                 e.stopImmediatePropagation();
                 
-                enviarComAssinatura(textarea, currentText);
+                enviarComAssinatura(textarea);
             }
         }
     }
