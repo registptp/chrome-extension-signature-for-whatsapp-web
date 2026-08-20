@@ -1,45 +1,75 @@
 body {
-    width: 200px;
-    padding: 10px;
+    width: 230px; /* Aumentado de 200px */
+    padding: 12px;
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #bfebc7;
 }
 
-h1 { font-size: 18px; margin-bottom: 10px; }
+h1 { font-size: 21px; margin-bottom: 12px; }
 
-input { width: 90%; padding: 5px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; }
+/* --- Caixa de Texto estilo WhatsApp --- */
+input { 
+    font-weight: 500;
+    width: 85%; /* Ajustado para compensar o novo padding */
+    padding: 10px 14px; 
+    margin-bottom: 15px; 
+    border: none; /* Tira aquela borda cinza padrão */
+    border-radius: 8px; /* Cantos mais arredondados estilo WA */
+    background-color: #ffffff;
+    
+    /* AS MUDANÇAS DA FONTE ESTÃO AQUI */
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14.5px; /* Aumentamos um pouco para bater com o chat */
+    color: #111b21; /* Cor da fonte escura oficial do WhatsApp */
+    
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08); /* Sombra bem suave */
+    outline: none; /* Tira o foco azul padrão do Chrome */
+    transition: box-shadow 0.2s ease-in-out;
+}
 
-.switch { position: relative; display: inline-block; width: 40px; height: 20px; }
+/* Cor exata do texto de dica (placeholder) do WhatsApp */
+input::placeholder {
+    color: #8696a0; 
+    opacity: 1; /* Previne que alguns navegadores deixem o texto muito apagado */
+}
+
+/* Efeito quando clica para digitar (Anel verde do WhatsApp) */
+input:focus {
+    box-shadow: 0 0 0 2px #4CAF50; 
+}
+
+/* Botão Toggle recalculado para 15% maior */
+.switch { position: relative; display: inline-block; width: 46px; height: 23px; }
 .switch input { opacity: 0; width: 0; height: 0; }
-.slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: 0.4s; border-radius: 20px; }
-.slider:before { position: absolute; content: ""; height: 14px; width: 14px; left: 3px; bottom: 3px; background-color: white; transition: 0.4s; border-radius: 50%; }
+.slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: 0.4s; border-radius: 23px; }
+.slider:before { position: absolute; content: ""; height: 16px; width: 16px; left: 3.5px; bottom: 3.5px; background-color: white; transition: 0.4s; border-radius: 50%; }
 input:checked + .slider { background-color: #4CAF50; }
-input:checked + .slider:before { transform: translateX(20px); }
+input:checked + .slider:before { transform: translateX(23px); }
 
 /* --- Footer e Botões --- */
 .footer {
-    margin-top: 15px;
-    padding-top: 10px;
+    margin-top: 17px;
+    padding-top: 12px;
     border-top: 1px solid #99c2a3;
-    font-size: 11px;
+    font-size: 13px;
     color: #444;
 }
 
 .actions {
     display: flex;
     justify-content: center;
-    gap: 4px;
-    margin-top: 8px;
+    gap: 5px;
+    margin-top: 9px;
 }
 
 .btn {
     background-color: #2b7a4b;
     color: white;
-    padding: 4px 6px;
+    padding: 5px 7px;
     border-radius: 4px;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
     cursor: pointer;
     border: none;
@@ -53,19 +83,19 @@ input:checked + .slider:before { transform: translateX(20px); }
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    margin-bottom: 12px;
-    opacity: 0.8; /* Levemente transparente para ficar discreto */
+    margin-bottom: 14px;
+    opacity: 0.8; 
 }
 
 .header-topo img {
-    width: 16px;
-    height: 16px;
-    margin-right: 6px;
+    width: 18px;
+    height: 18px;
+    margin-right: 7px;
 }
 
 .header-topo span {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
-    color: #1a4d2e; /* Mesma cor usada nos botões hover para manter o padrão */
+    color: #1a4d2e; 
     letter-spacing: 0.5px;
 }
