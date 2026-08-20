@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Signature for WhatsApp Web",
   "version": "1.4",
-  "description": "Adiciona automaticamente a assinatura antes da mensagem no WhatsApp Web. By Regis",
+  "description": "Adiciona automaticamente sua assinatura nas mensagens do WhatsApp Web.",
   "permissions": ["scripting", "storage"],
   "host_permissions": ["https://web.whatsapp.com/*"],
   "content_scripts": [

@@ -46,3 +46,26 @@ input:checked + .slider:before { transform: translateX(20px); }
 }
 
 .btn:hover { background-color: #1a4d2e; }
+
+/* --- Header Topo --- */
+.header-topo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 12px;
+    opacity: 0.8; /* Levemente transparente para ficar discreto */
+}
+
+.header-topo img {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+.header-topo span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #1a4d2e; /* Mesma cor usada nos botões hover para manter o padrão */
+    letter-spacing: 0.5px;
+}
