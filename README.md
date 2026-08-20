@@ -1,6 +1,6 @@
 # 🚀 Signature for WhatsApp Web
 
-[![Versão](https://img.shields.io/badge/version-1.4-blue.svg)](https://github.com/)
+[![Versão](https://img.shields.io/badge/version-1.5-blue.svg)](https://github.com/)
 [![Plataforma](https://img.shields.io/badge/Plataforma-Google_Chrome-yellow.svg)](https://www.google.com/chrome/)
 
 Uma extensão simples para o Chrome que adiciona automaticamente uma assinatura nas suas mensagens do WhatsApp Web. 
